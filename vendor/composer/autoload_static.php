@@ -16,14 +16,13 @@ class ComposerStaticInita6a35aa4d6d2e419b1e02b7a80a0fc0f
     public static $prefixDirsPsr4 = array (
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/database',
-            1 => __DIR__ . '/../..' . '/app/controllers',
-            2 => __DIR__ . '/../..' . '/app/models',
+            0 => __DIR__ . '/../..' . '/app/controllers',
+            1 => __DIR__ . '/../..' . '/app/models',
+            2 => __DIR__ . '/../..' . '/app/libraries',
         ),
     );
 
     public static $classMap = array (
-        'App\\Database' => __DIR__ . '/../..' . '/app/database/Database.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
