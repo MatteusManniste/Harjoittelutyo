@@ -5,7 +5,7 @@
 
 <body>
     <?php require_once "../app/views/inc/navbar.php" ?>
-    <h1>Login</h1> 
+    <?php require_once "../app/views/inc/login_form.php" ?>
     <?php require_once "../app/views/inc/footer.php" ?>
 </body>
 
