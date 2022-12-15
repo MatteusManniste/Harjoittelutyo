@@ -1,4 +1,4 @@
-<section>
+<section id="categories_items">
     <img id="logo" src="https://cdn.discordapp.com/attachments/1050411938594689024/1051799330308243486/image-removebg-preview.png" alt="">
     <div class="categories">
         <ul class="categories-links">
