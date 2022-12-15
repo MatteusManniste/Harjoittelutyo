@@ -1,4 +1,4 @@
 <?php
 
 //urlin juuri
-define('URLROOT', 'http://localhost/harjoittelutyo/public');
+define('URLROOT', 'http://localhost/harjoittelutyo');
