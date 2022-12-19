@@ -1,6 +1,6 @@
 <?php
-require_once "../vendor/autoload.php";
-require_once '../app/config/config.php';
-?>
 
-<?php $s = new App\Router() ?>
+require_once '../app/loader.php';
+
+//alustetaan Core
+$init = new Core();

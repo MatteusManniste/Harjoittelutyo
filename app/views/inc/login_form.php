@@ -1,11 +1,11 @@
-<section id="login_form"></section>
+<section id="login_form">
     <div class="login">
         <div id="register-instead-positioning">
-            <form class="login-form" action="<?= URLROOT . "/login" ?>" method="post">
+            <form class="login-form" action="<?= URLROOT . "/users/login" ?>" method="post">
                 <h2 id="login-title">Login to your account</h2>
                 <div class="login-data">
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" placeholder="Your username...">
+                    <label for="email">Username:</label>
+                    <input type="text" name="email" placeholder="Your username...">
                     <label for="password">Password:</label>
                     <input type="password" name="password" placeholder="Your password...">
                 </div>
