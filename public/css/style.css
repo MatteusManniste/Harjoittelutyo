@@ -223,8 +223,54 @@ header {
 
 .categories-item {
     display: flex;
+    position: relative;
     justify-content: center;
     border: 4px solid var(--clr-primary);
+    backdrop-filter: blur(6px);
+    transition: transform 0.5s ease;
+}
+
+.categories-item>img {
+    max-height: 275px;
+    max-width: 275px;
+    object-fit: contain;
+}
+
+.categories-item:hover {
+    backdrop-filter: blur(8px);
+}
+
+.categories-item-title {
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: var(--clr-white);
+    font-weight: var(--fw-semibold);
+    text-shadow: 2px 2px var(--clr-black);
+    display: none;
+}
+
+.categories-item-price {
+    position: absolute;
+    top: 87.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: var(--clr-white);
+    font-weight: var(--fw-semibold);
+    text-shadow: 1px 1px var(--clr-black);
+    font-size: 1.25rem;
+    display: none;
+}
+
+.categories-item:hover .categories-item-title, .categories-item:hover .categories-item-price {
+    display: block;
+}
+
+.categories-item:hover {
+    transform: scale(1.05);
 }
 
 /* ------------ Login ------------ */

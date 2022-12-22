@@ -1,3 +1,5 @@
+<?php $items = new Items() ?>
+
 <section id="categories_items">
     <img id="logo" src="https://cdn.discordapp.com/attachments/1050411938594689024/1051799330308243486/image-removebg-preview.png" alt="">
     <div class="categories">
@@ -11,26 +13,6 @@
     </div>
     <h2 id="categories-links-current">ALL</h2>
     <div class="categories-items">
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
-        <div class="categories-item">
-            <img class="categories-item-img" src="https://picsum.photos/300" alt="">
-        </div>
+        <?php $items->listItems() ?>
     </div>
 </section>
