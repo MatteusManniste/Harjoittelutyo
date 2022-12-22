@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2022 at 01:11 AM
--- Server version: 10.4.24-MariaDB
+-- Generation Time: 22.12.2022 klo 09:02
+-- Palvelimen versio: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `asiakas`
+-- Rakenne taululle `asiakas`
 --
 
 CREATE TABLE `asiakas` (
@@ -42,7 +42,7 @@ CREATE TABLE `asiakas` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hallitsija`
+-- Rakenne taululle `hallitsija`
 --
 
 CREATE TABLE `hallitsija` (
@@ -55,7 +55,7 @@ CREATE TABLE `hallitsija` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `hallitsija`
+-- Vedos taulusta `hallitsija`
 --
 
 INSERT INTO `hallitsija` (`hallitsijaID`, `etunimi`, `sukunimi`, `sahkoposti`, `kayttajatunnus`, `salasana`) VALUES
@@ -66,7 +66,7 @@ INSERT INTO `hallitsija` (`hallitsijaID`, `etunimi`, `sukunimi`, `sahkoposti`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tavara`
+-- Rakenne taululle `tavara`
 --
 
 CREATE TABLE `tavara` (
@@ -79,7 +79,7 @@ CREATE TABLE `tavara` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tavara`
+-- Vedos taulusta `tavara`
 --
 
 INSERT INTO `tavara` (`tavaraID`, `nimi`, `kategoria`, `luotu`, `kuva`, `hinta`) VALUES
@@ -91,7 +91,9 @@ INSERT INTO `tavara` (`tavaraID`, `nimi`, `kategoria`, `luotu`, `kuva`, `hinta`)
 (6, 'Diego Revengers Movie', '', '2022-12-21 23:48:14', 'https://cdn.discordapp.com/attachments/1050411938594689024/1054302616970072144/diego_revengers.png', '4.99€'),
 (7, 'Fullmetal Diego Movie', '', '2022-12-21 23:56:04', 'https://cdn.discordapp.com/attachments/1050411938594689024/1054302617280454666/fullmetal_diego.png', '4.99€'),
 (10, 'Diegobooth Movie', '', '2022-12-22 00:00:48', 'https://cdn.discordapp.com/attachments/1050411938594689024/1054344645435465808/Diegobooth.png', '4.99€'),
-(11, 'Diegopastor Movie', '', '2022-12-22 00:02:04', 'https://cdn.discordapp.com/attachments/1050411938594689024/1054348748773396540/diegopastor.jpg', '4.99€');
+(11, 'Diegopastor Movie', '', '2022-12-22 00:02:04', 'https://cdn.discordapp.com/attachments/1050411938594689024/1054348748773396540/diegopastor.jpg', '4.99€'),
+(12, 'Diego Xmas Sweater', '', '2022-12-22 07:58:07', 'https://cdn.discordapp.com/attachments/1050411938594689024/1055391942395039765/DiegoSweater.png', '59.99€'),
+(13, 'Diego Sweatshirt', '', '2022-12-22 07:59:10', 'https://cdn.discordapp.com/attachments/1050411938594689024/1055392261212491806/DiegoShit.png', '59.99€');
 
 --
 -- Indexes for dumped tables
@@ -135,7 +137,7 @@ ALTER TABLE `hallitsija`
 -- AUTO_INCREMENT for table `tavara`
 --
 ALTER TABLE `tavara`
-  MODIFY `tavaraID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `tavaraID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
